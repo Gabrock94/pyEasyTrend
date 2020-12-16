@@ -14,7 +14,7 @@ from scipy import stats
 from scipy.stats import norm
 import pandas as pd
 
-__version__ = '0.0.0.2'
+__version__ = '0.0.0.5'
 
 MODEL_NAMES = ['Constant', # y = mean
                'Linear', # y = mx+1
