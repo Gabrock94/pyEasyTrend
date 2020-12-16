@@ -50,11 +50,11 @@ setup(name='pyEasyTrend',
         'Topic :: Psychology :: Cognitive Sciences',
 
         #Intended Audience
-        'Intended Audience :: Physiologists',
-        'Intended Audience :: Psychologists :: Neuroscientists',
-        'Intended Audience :: Data Scientists',
-        'Intended Audience :: Cool people',
-        'Intended Audience :: Researchers',
+        'Intended Audience :: Education',
+        'Intended Audience :: Healthcare Industry',
+        'Intended Audience :: Science/Research',
+
+
     ],
     zip_safe=False,
     include_package_data=False,

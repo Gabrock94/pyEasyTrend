@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyEasyTrend.egg-info/PKG-INFO
+pyEasyTrend.egg-info/SOURCES.txt
+pyEasyTrend.egg-info/dependency_links.txt
+pyEasyTrend.egg-info/not-zip-safe
+pyEasyTrend.egg-info/requires.txt
+pyEasyTrend.egg-info/top_level.txt
+pyeasytrend/__init__.py
