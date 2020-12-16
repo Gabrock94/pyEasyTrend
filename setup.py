@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 
 setup(name='pyEasyTrend',
-    version='0.0.0.2d',
+    version='0.0.0.3',
     description='A Python package to perform trend analysis using a single-line command.',
     long_description="A Python package to perform trend analysis using a single-line command.",
     url='https://github.com/Gabrock94/https://github.com/Gabrock94/pyEasyTrend',
