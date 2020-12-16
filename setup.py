@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 
 setup(name='pyEasyTrend',
-    version='0.0.0.1',
+    version='0.0.0.2',
     description='A Python package to perform trend analysis using a single-line command.',
     long_description="A Python package to perform trend analysis using a single-line command.",
     url='https://github.com/Gabrock94/https://github.com/Gabrock94/pyEasyTrend',
@@ -23,7 +23,8 @@ setup(name='pyEasyTrend',
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Alpha',
+        #'Development Status :: 3 - Alpha',
+        'Development Status :: 2 - Pre-Alpha',
         
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: GNU General Public License (GPL)',
@@ -42,12 +43,11 @@ setup(name='pyEasyTrend',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: Unix',
-        'Operating System :: Linux',
         
         #Topic
-        'Topic :: Trend Analysis',
-        'Topic :: Social Sciences',
-        'Topic :: Psychology :: Cognitive Sciences',
+        'Topic :: Education',
+        'Topic :: Scientific/Engineering',
+        'Topic :: Utilities',
 
         #Intended Audience
         'Intended Audience :: Education',
