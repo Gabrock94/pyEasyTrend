@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pyEasyTrend &#8212; pyEasyTrend 0.0.0.6 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to pyEasyTrend’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-__init__">
+<span id="pyeasytrend"></span><h1>pyEasyTrend<a class="headerlink" href="#module-__init__" title="Permalink to this headline">¶</a></h1>
+<p>This python package is used to perform Trends analysis using a single line</p>
+<p>Created on Tue Dec 15 15:26:05 2020
+Last edited on Mon Dec 21 18:45:00 2020</p>
+<p>&#64;author: Giulio gabrock Gabrieli</p>
+<dl class="py function">
+<dt id="init__.analyzeTrend">
+<span id="__init__.analyzeTrend"></span><code class="sig-prename descclassname">__init__.</code><code class="sig-name descname">analyzeTrend</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">maxDegree</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">visualize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">title</span><span class="o">=</span><span class="default_value">'Trend Analysis'</span></em>, <em class="sig-param"><span class="n">xlabel</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">ylabel</span><span class="o">=</span><span class="default_value">'y'</span></em>, <em class="sig-param"><span class="n">plotci</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">ci</span><span class="o">=</span><span class="default_value">95</span></em><span class="sig-paren">)</span><a class="headerlink" href="#init__.analyzeTrend" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a simple entrypoint to perform a trend analysis. This functions
+performs the analysis of the trend (SSE, R2, F, AIC, BIC) up to the maxDegree order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>list</em>) – x</p></li>
+<li><p><strong>y</strong> (<em>list</em>) – y</p></li>
+<li><p><strong>maxDegree</strong> (<em>int</em>) – highest order of the model to test</p></li>
+<li><p><strong>visualize</strong> (<em>bool</em>) – renders a visual representation of the model(s)</p></li>
+<li><p><strong>title</strong> (<em>string</em>) – Title of the visual representation. Only used if visualize is True</p></li>
+<li><p><strong>xlabel</strong> (<em>string</em>) – Label of the X axis of the visual representation. Only used if visualize is True</p></li>
+<li><p><strong>ylabel</strong> (<em>string</em>) – Label of the Y axis of the visual representation. Only used if visualize is True</p></li>
+<li><p><strong>plotci</strong> (<em>boolean</em>) – renders the confidence interval on the plot</p></li>
+<li><p><strong>ci</strong> (<em>int</em>) – confidence interval. Only used if plotci is True</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a dictionary containing the results of the trend analysis</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="init__.tablifyResults">
+<span id="__init__.tablifyResults"></span><code class="sig-prename descclassname">__init__.</code><code class="sig-name descname">tablifyResults</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">results</span></em><span class="sig-paren">)</span><a class="headerlink" href="#init__.tablifyResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function create a pandas DataFrame containing the results of the 
+linear trend analysis obtained using the analyzeTrend function.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param results</dt>
+<dd class="field-odd"><p>results dictionary obtained using the analyzeTrend function</p>
+</dd>
+<dt class="field-even">type resu;ts</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>pandas Dataframe of length = len(maxOrder).</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>pandas DataFrame</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pyEasyTrend</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">pyEasyTrend</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to pyEasyTrend’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Giulio Gabrieli.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/pyEasyTrend.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
