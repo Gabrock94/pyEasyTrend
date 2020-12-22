@@ -35,13 +35,20 @@ You can check the [full documentation online](https://pyeasytrend.rtfd.io). Alte
 
 ## Example (Coming soon)
 ```python
-import pyeasytrend
+import pyeasytrend #import the library
+
+#Load some sample data and create a dataframe
 data = {'StudyTime':[24, 44, 21, 45, 54, 26, 57, 34, 33, 12, 17, 21, 58, 41, 29, 55, 42, 40, 21, 9, 39, 30, 17, 31, 51, 42, 30, 3, 20, 21, 4, 16, 26, 6, 18, 50, 60, 13, 23, 13, 3, 35, 38, 51, 12, 35, 7, 42, 20, 41, 37, 56, 19, 57, 12, 49, 15, 6, 43, 7, 40, 12, 35, 4, 46, 29, 6, 38, 36, 33, 21, 33, 50, 54, 25, 38, 48, 17, 28, 48, 16, 50, 24, 15, 40, 54, 40, 42, 2, 20, 24, 21, 37, 15, 52, 36, 5, 7, 29, 21],
         'Score':[18, 47, 21, 60, 80, 18, 100, 28, 41, 7, 12, 17, 82, 45, 33, 94, 41, 55, 9, 6, 53, 24, 13, 35, 62, 43, 33, 2, 17, 10, 0, 7, 14, 0, 14, 72, 94, 7, 14, 3, 0, 43, 39, 80, 5, 39, 4, 43, 14, 37, 39, 80, 16, 94, 7, 55, 13, 2, 45, 6, 55, 7, 35, 0, 69, 18, 0, 45, 43, 27, 11, 37, 67, 82, 16, 41, 74, 10, 19, 55, 14, 60, 18, 7, 55, 64, 37, 60, 2, 10, 17, 14, 30, 6, 69, 32, 2, 1, 32, 10]}
 df = pd.DataFrame(data)
 
+#Analyze the data using up to a Quartic model (y = ax^4 + bx^3 + cx^2 + dx + q, maxDegree = 4), and generate a visual representation of the analysis (visualize = True)
+results = pyeasytrend.analyzeTrend(df.StudyTime, df.Score, maxDegree=4, visualize=True)
 
+#Put the results in a pandas Table
+pyeasytrend.tablifyResults(results)
 ```
+|    |   Order |       R2 |     SSE |           F |      pvalue |     AIC |     BIC |\n|---:|--------:|---------:|--------:|------------:|------------:|--------:|--------:|\n|  0 |       1 | 0.907946 | 6498.52 | 966.59      | 1.11022e-16 | 703.204 | 705.809 |\n|  1 |       2 | 0.952677 | 3340.75 |  91.6874    | 1.11022e-15 | 638.666 | 643.876 |\n|  2 |       3 | 0.952691 | 3339.76 |   0.0283989 | 0.866529    | 640.636 | 648.452 |
 
 ### Requirements
 - Numpy
