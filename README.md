@@ -26,7 +26,7 @@ pip install --user --upgrade pyeasytrend
 ```
 
 ## Documentation
-You can check the full documentation here: https://pyeasytrend.rtfd.io
+You can check the [full documentation online](https://pyeasytrend.rtfd.io). Alternatively, a copy of the documentation is available [in the docs folder](https://github.com/Gabrock94/pyEasyTrend/tree/master/docs/_build/html)
 
 ## Example (Coming soon)
 ```python
