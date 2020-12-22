@@ -12,7 +12,7 @@ __PyPI__
 
 __Documentation__
 [![Documentation Status](https://readthedocs.org/projects/pyeasytrend/badge/?version=latest)](http://pyeasytrend.readthedocs.io/en/latest/?badge=latest)
-<!--- ([![DOI](https://zenodo.org/badge/109267664.svg)](https://zenodo.org/badge/latestdoi/109267664)) -->
+[![DOI](https://zenodo.org/badge/248666768.svg)](https://zenodo.org/badge/latestdoi/248666768)
 
 ## Installation
 pyEasyTrend can be installed using pip:
