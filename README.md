@@ -48,6 +48,7 @@ results = pyeasytrend.analyzeTrend(df.StudyTime, df.Score, maxDegree=4, visualiz
 #Put the results in a pandas Table
 pyeasytrend.tablifyResults(results)
 ```
+![](https://github.com/Gabrock94/pyEasyTrend/blob/master/Tutorials/example1.png)
 |   Order |       R2 |     SSE |           F |      pvalue |     AIC |     BIC|
 |--------:|---------:|--------:|------------:|------------:|--------:|--------:|
 |       1 | 0.907946 | 6498.52 | 966.59      | 1.11022e-16 | 703.204 | 705.809 |
