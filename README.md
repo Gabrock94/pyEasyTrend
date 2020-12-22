@@ -1,7 +1,7 @@
 # pyEasyTrend
 A simple entrypoint to perform a trend analysis in Python.
 
-__Python__
+__Repository__
 ![GitHub release](https://img.shields.io/github/release/Gabrock94/pyEasyTrend.svg)
 
 __PyPI__
