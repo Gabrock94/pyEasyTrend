@@ -57,9 +57,9 @@ def analyzeTrend(x, y, maxDegree = 2,
         raise TypeError("maxDegree must be an interger value")
     if(maxDegree < 1):
         raise TypeError("maxDegree must be 1 (Linear model) or higher")
-    if(type(x) != list):
+    if(type(x) in [list, 'pandas.core.series.Series']):
         raise TypeError("x must be a list")
-    if(type(y) != list):
+    if(type(y) in [list, 'pandas.core.series.Series']):
         raise TypeError("y must be a list")
     if(type(visualize) != bool):
         raise TypeError("visualize must be a boolean")
@@ -179,19 +179,13 @@ def tablifyResults(results):
 """ For debug purposes."""
 
 if(__name__=='__main__'):
-    import random
-    random.seed('010194')
-    #x = [1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4]
-    #y = [2,3,1,2,0,4,6,8,5,3,7,7,6,8,10,5,10,9,11,10,7,9,8,9]
-    
-    #generate 30 random points 
-    x = [random.randint(10, 50) for x in range(0, 30)]
-    y = [value + random.randint(10, 50) for value in x]
-    
+    data = {'StudyTime':[24, 44, 21, 45, 54, 26, 57, 34, 33, 12, 17, 21, 58, 41, 29, 55, 42, 40, 21, 9, 39, 30, 17, 31, 51, 42, 30, 3, 20, 21, 4, 16, 26, 6, 18, 50, 60, 13, 23, 13, 3, 35, 38, 51, 12, 35, 7, 42, 20, 41, 37, 56, 19, 57, 12, 49, 15, 6, 43, 7, 40, 12, 35, 4, 46, 29, 6, 38, 36, 33, 21, 33, 50, 54, 25, 38, 48, 17, 28, 48, 16, 50, 24, 15, 40, 54, 40, 42, 2, 20, 24, 21, 37, 15, 52, 36, 5, 7, 29, 21],
+            'Score':[18, 47, 21, 60, 80, 18, 100, 28, 41, 7, 12, 17, 82, 45, 33, 94, 41, 55, 9, 6, 53, 24, 13, 35, 62, 43, 33, 2, 17, 10, 0, 7, 14, 0, 14, 72, 94, 7, 14, 3, 0, 43, 39, 80, 5, 39, 4, 43, 14, 37, 39, 80, 16, 94, 7, 55, 13, 2, 45, 6, 55, 7, 35, 0, 69, 18, 0, 45, 43, 27, 11, 37, 67, 82, 16, 41, 74, 10, 19, 55, 14, 60, 18, 7, 55, 64, 37, 60, 2, 10, 17, 14, 30, 6, 69, 32, 2, 1, 32, 10]}
+    df = pd.DataFrame(data)
+    df.head()
+        
     #run the analysis
-    results = analyzeTrend(x,y, visualize=True, maxDegree=3)
-    
-    #put the results in a better table
+    results = analyzeTrend(df.StudyTime, df.Score, maxDegree=3, visualize=True)
     table = tablifyResults(results)
     print(table)
     

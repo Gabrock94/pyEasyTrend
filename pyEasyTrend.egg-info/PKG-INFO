@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: pyEasyTrend
+Version: 0.0.0.6
+Summary: A Python package to perform trend analysis using a single-line command.
+Home-page: https://github.com/Gabrock94/https://github.com/Gabrock94/pyEasyTrend
+Author: Giulio Gabrieli
+Author-email: gack94@gmail.com
+License: GPL-3.0
+Download-URL: https://github.com/Gabrock94/pyEasyTrend/archive/0.0.0.1.tar.gz
+Description: A Python package to perform trend analysis using a single-line command.
+Keywords: Trend Analysis,Linear model,Full Model,Reduced model
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
