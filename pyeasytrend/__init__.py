@@ -14,7 +14,7 @@ from scipy import stats
 from scipy.stats import norm
 import pandas as pd
 
-__version__ = '0.0.0.6'
+__version__ = '0.0.0.7'
 
 MODEL_NAMES = ['Constant (mean y)', # y = mean
                'Linear', # y = mx+1
@@ -57,9 +57,9 @@ def analyzeTrend(x, y, maxDegree = 2,
         raise TypeError("maxDegree must be an interger value")
     if(maxDegree < 1):
         raise TypeError("maxDegree must be 1 (Linear model) or higher")
-    if(type(x) in [list, 'pandas.core.series.Series']):
+    if(type(x) not in [list, 'pandas.core.series.Series']):
         raise TypeError("x must be a list")
-    if(type(y) in [list, 'pandas.core.series.Series']):
+    if(type(y) not in [list, 'pandas.core.series.Series']):
         raise TypeError("y must be a list")
     if(type(visualize) != bool):
         raise TypeError("visualize must be a boolean")
