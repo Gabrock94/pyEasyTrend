@@ -17,7 +17,7 @@ __Documentation__
 ## Installation
 pyEasyTrend can be installed using pip:
 ```bash
-pip install pip install pyEasyTrend
+pip install pyEasyTrend
 ```
 or downloading / cloning the repository and, from the root folder of the project, running:
 ```bash
